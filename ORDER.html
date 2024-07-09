@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <title>Order Now</title>
+</head>
+
+<body style="padding-top: 56px; padding-bottom: 100px;">
+
+  <style>
+    .navbar-custom {
+      background-color: #009637;
+    }
+    .navbar-brand img {
+      height: 40px;
+      width: auto;
+    }
+    .order-now {
+      padding: 20px;
+      text-align: center;
+    }
+    .order-now h1 {
+      font-size: 2rem;
+    }
+    .card {
+      width: 80%;
+      margin: 0 auto;
+    }
+    .card img {
+      width: 100px;
+      height: auto;
+    }
+    .btn-order-now {
+      background-color: #009637;
+      color: white;
+      border: none;
+    }
+    .btn-order-now:hover {
+      background-color: #007f2b;
+    }
+    .btn-selected {
+      background-color: #009637 !important;
+      color: white !important;
+    }
+    footer {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      background-color: #009637;
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+    }
+    .footer-text {
+      font-size: 0.9rem;
+      margin-bottom: 0;
+    }
+  </style>
+
+  <!--NAVBAR-->
+  <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+    <div class="container">
+      <a href="index.html" class="navbar-brand">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Mang_Inasal.svg/1280px-Mang_Inasal.svg.png" alt="Mang Inasal">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navmenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">Homepage</a>
+          </li>
+          <li class="nav-item">
+            <a href="about.html" class="nav-link">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a href="order.html" class="nav-link">Order Now</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Order Now Section -->
+  <div class="container order-now">
+    <h2 class="text-center text-while" style="font-size: 25px; padding-top: 1em; color: rgb(0, 0, 0);">Menu</h2>
+    
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-3">
+        <div class="card bg-light">
+          <div class="card-body text-center">
+            <img src="https://lh3.googleusercontent.com/STr5Mn0q0ggDrbC_P2MtP_75HvuOhwOd7PApXy6Tx6Z8TLFCUCpjVXyU0L9yKmz88IMAp8Fc3fKHkj5sY2uoBjB0qXHnVLTLm9Q=w500-rw" alt="menu1" />
+            <h3 class="card-title mb-3">Chicken Inasal Trio</h3>
+            <p class="card-text">P 399.00</p>
+            <button class="btn btn-order-now" data-bs-toggle="modal" data-bs-target="#orderModal">Order now</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3">
+        <div class="card bg-light">
+          <div class="card-body text-center">
+            <img src="https://lh3.googleusercontent.com/lqHdrbQc0VjCmFRVWXlyFgKvmVJDtzKgJI3HajBzzGeIprH5N_FeoHMVIkAMoWM2--3OcXnFMQiQYLHd_WdN5NiQIHWTWwaTbDPzBQ=w500-rw" alt="menu2" />
+            <h3 class="card-title mb-3">Chicken Inasal Paa & Pork BBQ Buddy Size</h3>
+            <p class="card-text">P 368.00</p>
+            <button class="btn btn-order-now" data-bs-toggle="modal" data-bs-target="#orderModal">Order now</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3">
+        <div class="card bg-light">
+          <div class="card-body text-center">
+            <img src="https://lh3.googleusercontent.com/4a6DzRtL7Wms20FnLOLdHFM2TzuygdMJisDK4vpyMp16IDrzFIWC66EeWpg6GGD3Bcd0fg07gA9hqtXo7OL_OM0NJ3y4eo-zpqrk=w500-rw" alt="menu3" />
+            <h3 class="card-title mb-3">Chicken Inasal Solo Fiesta</h3>
+            <p class="card-text">P 245.00</p>
+            <button class="btn btn-order-now" data-bs-toggle="modal" data-bs-target="#orderModal">Order now</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3">
+        <div class="card bg-light">
+          <div class="card-body text-center">
+            <img src="https://lh3.googleusercontent.com/r54XV2gp26zjvLupVUBkuo4-CzQXeX6b5DBTyQ5E_jommpovKJyQBDAIXht19u3o4KmrsHOBCyBx3X9xlPO4QEWP9OzFQJh-BsMvPg=w500-rw" alt="menu4" />
+            <h3 class="card-title mb-3">Chicken Inasal & 1 pc Pork BBQ Solo Fiesta</h3>
+            <p class="card-text">P 290.00</p>
+            <button class="btn btn-order-now" data-bs-toggle="modal" data-bs-target="#orderModal">Order now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row g-4 mt-4">
+      <div class="col-md-6 col-lg-3">
+        <div class="card bg-light">
+          <div class="card-body text-center">
+            <img src="https://lh3.googleusercontent.com/1fB7bg4jg23KZ1YuvRgRWKDKfyrdrwsZgeGV9ntqQOIyYbtN6_2ir7ULyHvWdFmeAiwXLatRaKUdJOTGLn3P0Z9tNfsXOg6Nxkqo=w500-rw" alt="menu5" />
+            <h3 class="card-title mb-3">Paa Large PM1</h3>
+            <p class="card-text">P 144.00</p>
+            <button class="btn btn-order-now" data-bs-toggle="modal" data-bs-target="#orderModal">Order now</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3">
+        <div class="card bg-light">
+          <div class="card-body text-center">
+            <img src="https://lh3.googleusercontent.com/LHnbUOMYF6IBhjMvqSar7IXl2njaYyaHPiwhIHM_0jwIX5zhj3pBbQkEWr0SjIXH4vz5KYgwD_sA82CQ-poyHWDftBHPzZOjEI3A=w500-rw" alt="menu6" />
+            <h3 class="card-title mb-3">2pcs Pork BBQ</h3>
+            <p class="card-text">P 110.00</p>
+            <button class="btn btn-order-now" data-bs-toggle="modal" data-bs-target="#orderModal">Order now</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3">
+        <div class="card bg-light">
+          <div class="card-body text-center">
+            <img src="https://lh3.googleusercontent.com/FUa5OkeSojyYDQNzmCrU7eeUX7xdNia0AYmi8F7-RMrp7EjAVoAmBVrQOIwDY1dOABM5whjvmPDrnX-KWsIMYvUfpNO8m7mZNVU=w500-rw" alt="menu7" />
+            <h3 class="card-title mb-3">Extra Creamy Halo-Halo</h3>
+            <p class="card-text">P 78.00</p>
+            <button class="btn btn-order-now" data-bs-toggle="modal" data-bs-target="#orderModal">Order now</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3">
+        <div class="card bg-light">
+          <div class="card-body text-center">
+            <img src="https://lh3.googleusercontent.com/wur11T5RQpNSbcCnjIY5eJFcCPcuZYh50m-OORPW8Aox2AsN5JtzhpqGahCVMljdR26QtsDWqlSaq4DH3vB2LA2o4_bIkrn6x1vt=w500-rw" alt="menu8" />
+            <h3 class="card-title mb-3">Palabok Regular Size</h3>
+            <p class="card-text">P 88.00</p>
+            <button class="btn btn-order-now" data-bs-toggle="modal" data-bs-target="#orderModal">Order now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="orderModal" tabindex="-1" aria-labelledby="orderModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="orderModalLabel">Delivery or Pick-up?</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="d-flex justify-content-center">
+            <button id="deliveryButton" class="btn me-2 btn-light">Delivery</button>
+            <button id="pickupButton" class="btn btn-light">Pick-up</button>
+          </div>
+          <div class="mt-3 text-center">
+            <label>Delivery Time:</label><br>
+            <input type="radio" name="delivery-time" id="now" checked>
+            <label for="now">Now</label>
+            <input type="radio" name="delivery-time" id="schedule">
+            <label for="schedule">Schedule for later</label>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-success">CONFIRM</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <p class="footer-text">This website is made for educational purposes and is no way associated with the Mang Inasal brand.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const deliveryButton = document.getElementById('deliveryButton');
+      const pickupButton = document.getElementById('pickupButton');
+
+      deliveryButton.addEventListener('click', function () {
+        deliveryButton.classList.add('btn-selected');
+        pickupButton.classList.remove('btn-selected');
+      });
+
+      pickupButton.addEventListener('click', function () {
+        pickupButton.classList.add('btn-selected');
+        deliveryButton.classList.remove('btn-selected');
+      });
+    });
+  </script>
+</body>
+</html>
